@@ -4,7 +4,8 @@ A cleaned out version of CoreUI's admin template with a blank starter page.
 ## Instructions to run on local machine server
 1. Make sure you have Node.js (w/ npm) and React.js installed. 
 2. Download this repo and using terminal, cd into this repository's parent folder
-3. Run "npm start" in terminal to start server in localhost:3000
+3. Run "npm install" in terminal to first required dependicies for this admin template
+4. Run "npm start" to view this template in localhost:3000
 
 ## Notes Regarding using/editing this "clean" Template
 * The _nav.js file has been cleaned from boilerplate code and now simply demonstrates the primary feautures of the side navbar. 
