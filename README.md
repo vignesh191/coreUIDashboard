@@ -11,5 +11,7 @@ This is a custom dashboard template created using CoreUI's starter template and 
 * The _nav.js file has been cleaned from boilerplate code and now simply demonstrates the primary feautures of the side navbar. 
 * The routes.js file was originally containing routes to CoreUI's component documentation pages, but has been cleaned out to only route to the Dashboard template, User page template, and a TestPage
 * A TestPage view has been added to be used as an example of a starter page, as well as its respective route, and navbar button (see Menu Item 3 in navbar).
-UPDATES
-* The Dashboard.js now has been remodeled to have a different layout including a 'world view'.
+
+## Recent Updates
+* 09/29: The Dashboard.js now has been remodeled to be the default starter view with widget, world-view, and bar chart components. 
+* 09/29: Sidebar and header have also been modified for a cleaner UI.
