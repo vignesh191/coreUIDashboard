@@ -12,7 +12,7 @@ import CIcon from '@coreui/icons-react'
 import ChartLineSimple from '../charts/ChartLineSimple'
 import ChartBarSimple from '../charts/ChartBarSimple'
 
-const WidgetsDropdown = () => {
+const WidgetsDropdown = (props) => {
   // render
   return (
     <CRow>
@@ -26,7 +26,7 @@ const WidgetsDropdown = () => {
               pointed
               className="c-chart-wrapper mt-3 mx-3"
               style={{height: '70px'}}
-              dataPoints={[65, 59, 84, 84, 51, 55, 40]}
+              dataPoints={props.w1data}
               pointHoverBackgroundColor="primary"
               label="Members"
               labels="months"
@@ -57,7 +57,7 @@ const WidgetsDropdown = () => {
               pointed
               className="mt-3 mx-3"
               style={{height: '70px'}}
-              dataPoints={[1, 18, 9, 17, 34, 22, 11]}
+              dataPoints={props.w2data}
               pointHoverBackgroundColor="info"
               options={{ elements: { line: { tension: 0.00001 }}}}
               label="Members"
@@ -89,7 +89,7 @@ const WidgetsDropdown = () => {
               className="mt-3"
               style={{height: '70px'}}
               backgroundColor="rgba(255,255,255,.2)"
-              dataPoints={[78, 81, 80, 45, 34, 12, 40]}
+              dataPoints={props.w3data}
               options={{ elements: { line: { borderWidth: 2.5 }}}}
               pointHoverBackgroundColor="warning"
               label="Members"
@@ -121,6 +121,7 @@ const WidgetsDropdown = () => {
               className="mt-3 mx-3"
               style={{height: '70px'}}
               backgroundColor="rgb(250, 152, 152)"
+              dataPoints={props.w4data}
               label="Members"
               labels="months"
             />
