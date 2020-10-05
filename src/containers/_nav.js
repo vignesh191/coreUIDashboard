@@ -1,96 +1,152 @@
 export default [
-//  {
-//    _tag: 'CSidebarNavTitle',
-//    _children: ['Menu']
-//  },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Angela Smith',
+    name: 'Dashboard',
     to: '/dashboard',
-    icon: {src: 'avatars/6.jpg', className:'c-avatar pr-1 p-1 mr-1', alt:"admin@bootstrapmaster.com"},
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Dashboards',
-    route: '/base',
-    icon: 'cil-grid',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Summary',
-        to: '/base/breadcrumbs',
-        icon: 'cil-notes',
-        color: 'secondary'
-
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Assets',
-        to: '/base/cards',
-        icon: 'cil-layers'
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'People',
-        to: '/base/carousels',
-        icon: 'cil-people'
-      }
-    ],
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Analytics',
-    route: '/buttons',
     icon: 'cil-speedometer',
+  },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Overview']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Today\'s View',
+    to: '/theme/colors',
+    icon: 'cil-drop',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Today\'s Exception',
+    to: '/theme/typography',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Asset Management']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'All Assets',
+    route: '/base',
+    icon: 'cil-puzzle',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'Entitlement Reports',
-        to: '/buttons/buttons',
-        icon: 'cil-print'
+        name: 'Breadcrumb',
+        to: '/base/breadcrumbs',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Violations',
-        to: '/buttons/brand-buttons',
-        icon: 'cil-warning'
+        name: 'Cards',
+        to: '/base/cards',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Recommendations',
-        to: '/buttons/button-groups',
-        icon: 'cil-inbox'
-      }
+        name: 'Carousel',
+        to: '/base/carousels',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Collapse',
+        to: '/base/collapses',
+      },
     ],
   },
- {
+  {
     _tag: 'CSidebarNavDropdown',
-    name: 'Others',
+    name: 'Source Code',
     route: '/buttons',
-    icon: 'cil-align-center',
+    icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'Subitem1',
+        name: 'Buttons',
         to: '/buttons/buttons',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Subitem2',
+        name: 'Brand buttons',
         to: '/buttons/brand-buttons',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Subitem3',
+        name: 'Buttons groups',
         to: '/buttons/button-groups',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Subitem4',
+        name: 'Dropdowns',
         to: '/buttons/button-dropdowns',
       }
     ],
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Databases',
+    to: '/charts',
+    icon: 'cil-chart-pie'
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Cloud Providers',
+    route: '/icons',
+    icon: 'cil-star',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'CoreUI Free',
+        to: '/icons/coreui-icons',
+        badge: {
+          color: 'success',
+          text: 'NEW',
+        },
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'CoreUI Flags',
+        to: '/icons/flags',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'CoreUI Brands',
+        to: '/icons/brands',
+      },
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'CRM Applications',
+    route: '/notifications',
+    icon: 'cil-bell',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Alerts',
+        to: '/notifications/alerts',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Badges',
+        to: '/notifications/badges',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Modal',
+        to: '/notifications/modals',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Toaster',
+        to: '/notifications/toaster'
+      }
+    ]
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Google Maps',
+    to: '/widgets',
+    icon: 'cil-calculator',
   }
-
 ]
 
